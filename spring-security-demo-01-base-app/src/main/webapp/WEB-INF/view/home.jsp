@@ -14,6 +14,7 @@
 <h2>Welcome to the home page :) </h2>
 <hr>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deserunt dolore dolores eius eligendi <br>
-eum expedita facilis harum natus, odio officia quaerat qui saepe sit veritatis. Modi omnis sapiente ut.
+eum expedita facilis harum natus, odio officia quaerat qui saepe sit veritatis. Modi omnis sapiente ut. <br>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 </body>
 </html>
