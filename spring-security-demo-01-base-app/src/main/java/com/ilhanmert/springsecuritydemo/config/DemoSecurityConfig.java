@@ -61,7 +61,8 @@ public class DemoSecurityConfig  {
                                 .loginPage("/showMyLoginPage")
                                 .loginProcessingUrl("/authenticateTheUser")
                                 .permitAll())
-
+                .logout(configurer -> configurer.permitAll())
+                //.csrf(configurer -> configurer.disable())
                 .build();
     }
 

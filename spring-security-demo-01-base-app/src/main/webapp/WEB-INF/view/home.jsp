@@ -1,3 +1,4 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%--
   Created by IntelliJ IDEA.
   User: ilhan
@@ -16,5 +17,9 @@
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deserunt dolore dolores eius eligendi <br>
 eum expedita facilis harum natus, odio officia quaerat qui saepe sit veritatis. Modi omnis sapiente ut. <br>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+<br>
+<form:form action="${pageContext.request.contextPath}/logout" method="POST">
+    <input type="submit" value="Logout">
+</form:form>
 </body>
 </html>

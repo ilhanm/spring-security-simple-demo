@@ -10,6 +10,9 @@
 		.failed {
 			color: red;
 		}
+		.success{
+			color: green;
+		}
 	</style>
 	
 </head>
@@ -27,6 +30,14 @@
 		
 			<i class="failed">Sorry! You entered invalid username/password.</i>
 			
+		</c:if>
+
+		<!-- Check for logout -->
+
+		<c:if test="${param.logout != null}">
+
+			<div class="success">You have succesfully logged out.</div>
+
 		</c:if>
 			
 		<p>
