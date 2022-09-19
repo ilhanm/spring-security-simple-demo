@@ -49,6 +49,8 @@
 		</p>
 		
 		<input type="submit" value="Login" />
+
+		<input type="hidden" name="${_csrf.parameterName}" value="${_csrf_token}" />
 		
 	</form:form>
 
