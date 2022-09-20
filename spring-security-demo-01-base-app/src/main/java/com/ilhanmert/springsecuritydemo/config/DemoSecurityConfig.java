@@ -26,7 +26,7 @@ public class DemoSecurityConfig  {
     @Bean
     public InMemoryUserDetailsManager userDetailsManager() {
         UserDetails john = User.builder()
-                .username("john")
+                .username("ilhan")
                 .password("{noop}test123")
                 .roles("EMPLOYEE")
                 .build();

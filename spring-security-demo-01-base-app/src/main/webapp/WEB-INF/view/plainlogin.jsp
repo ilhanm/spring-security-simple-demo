@@ -21,7 +21,7 @@
 
 <h3>My Custom Login Page</h3>
 
-	<form:form action="${pageContext.request.contextPath}/authenticateTheUser"
+	<form action="${pageContext.request.contextPath}/authenticateTheUser"
 			   method="POST">
 	
 		<!-- Check for login error -->
@@ -50,9 +50,11 @@
 		
 		<input type="submit" value="Login" />
 
-		<input type="hidden" name="${_csrf.parameterName}" value="${_csrf_token}" />
-		
-	</form:form>
+		<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+<%--	to create CSRF token without using form:form, instead we are using standart html form
+	and adding token manually here. Spring security will add the appropriate value on the back.
+	If we dont add, we can get this err: The server understood the request but refuses to authorize it.--%>
+	</form>
 
 </body>
 
