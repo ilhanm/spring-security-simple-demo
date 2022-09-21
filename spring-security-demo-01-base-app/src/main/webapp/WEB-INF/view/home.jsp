@@ -18,6 +18,29 @@
 User: <security:authentication property="principal.username"/>
 Role(s): <security:authentication property="principal.authorities"/>
 <br>
+<security:authorize access="hasRole('MANAGER')">
+
+    <!-- Add a link to point to /leaders ... this is for the managers -->
+
+    <p>
+        <a href="${pageContext.request.contextPath}/leaders">Leadership Meeting</a>
+        (Only for Manager peeps)
+    </p>
+
+</security:authorize>
+
+
+<security:authorize access="hasRole('ADMIN')">
+
+    <!-- Add a link to point to /systems ... this is for the admins -->
+
+    <p>
+        <a href="${pageContext.request.contextPath}/systems">IT Systems Meeting</a>
+        (Only for Admin peeps)
+    </p>
+
+</security:authorize>
+<br>
 <hr>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deserunt dolore dolores eius eligendi <br>
 eum expedita facilis harum natus, odio officia quaerat qui saepe sit veritatis. Modi omnis sapiente ut. <br>
