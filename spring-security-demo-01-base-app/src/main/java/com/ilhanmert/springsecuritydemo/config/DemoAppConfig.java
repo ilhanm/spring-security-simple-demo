@@ -66,6 +66,7 @@ public class DemoAppConfig {
         securityDataSource.setJdbcUrl(env.getProperty("jdbc.url"));
         securityDataSource.setUser(env.getProperty("jdbc.user"));
         securityDataSource.setPassword(env.getProperty("jdbc.password"));
+        System.out.println(env.getProperty("jdbc.password"));
 
         // set connection pool props
 
